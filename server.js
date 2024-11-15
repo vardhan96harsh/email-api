@@ -8,7 +8,7 @@ require("dotenv").config();
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
-
+ 
 // Nodemailer Transporter Configuration
 const transporter = nodemailer.createTransport({
   service: "gmail", // You can use other services like Outlook, Yahoo, etc.
