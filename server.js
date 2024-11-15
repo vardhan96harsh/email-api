@@ -20,7 +20,7 @@ const transporter = nodemailer.createTransport({
 });
 
 // API Endpoint to Send Emails
-app.post("/api/send-email", (req, res) => {
+app.post("https://email-api-sigma.vercel.app/api/send-email", (req, res) => {
   const { email, subject, message } = req.body;
 
   // Check if all required fields are present
